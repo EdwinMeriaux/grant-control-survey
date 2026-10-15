@@ -1,0 +1,164 @@
+[
+  {
+    "id": "SLIDE-256",
+    "title": "PID-01 \u00b7 Precision Motor Control",
+    "options": [
+      "I would follow the instructions stated on the card",
+      "I would ignore the conditions printed on the card",
+      "I would skip this card entirely"
+    ]
+  },
+  {
+    "id": "SLIDE-257",
+    "title": "PID-02 \u00b7 Reliable Process Regulation",
+    "options": [
+      "I would follow the instructions stated on the card",
+      "I would ignore the conditions printed on the card",
+      "I would skip this card entirely"
+    ]
+  },
+  {
+    "id": "SLIDE-258",
+    "title": "PID-03 \u00b7 Feedback Under Communication Delays",
+    "options": [
+      "I would follow the instructions stated on the card",
+      "I would ignore the conditions printed on the card",
+      "I would skip this card entirely"
+    ]
+  },
+  {
+    "id": "SLIDE-259",
+    "title": "STA-01 \u00b7 Stability of Nonlinear Systems",
+    "options": [
+      "I would follow the instructions stated on the card",
+      "I would ignore the conditions printed on the card",
+      "I would skip this card entirely"
+    ]
+  },
+  {
+    "id": "SLIDE-260",
+    "title": "STA-02 \u00b7 Safe Switching Between Controllers",
+    "options": [
+      "I would follow the instructions stated on the card",
+      "I would ignore the conditions printed on the card",
+      "I would skip this card entirely"
+    ]
+  },
+  {
+    "id": "SLIDE-261",
+    "title": "STA-03 \u00b7 Robustness to Persistent Disturbances",
+    "options": [
+      "I would follow the instructions stated on the card",
+      "I would ignore the conditions printed on the card",
+      "I would skip this card entirely"
+    ]
+  },
+  {
+    "id": "SLIDE-262",
+    "title": "LIN-01 \u00b7 Control With Limited Actuation",
+    "options": [
+      "I would follow the instructions stated on the card",
+      "I would ignore the conditions printed on the card",
+      "I would skip this card entirely"
+    ]
+  },
+  {
+    "id": "SLIDE-263",
+    "title": "LIN-02 \u00b7 Observers With Limited Sensing",
+    "options": [
+      "I would follow the instructions stated on the card",
+      "I would ignore the conditions printed on the card",
+      "I would skip this card entirely"
+    ]
+  },
+  {
+    "id": "SLIDE-264",
+    "title": "LIN-03 \u00b7 Reliable Multivariable Control",
+    "options": [
+      "I would follow the instructions stated on the card",
+      "I would ignore the conditions printed on the card",
+      "I would skip this card entirely"
+    ]
+  },
+  {
+    "id": "SLIDE-265",
+    "title": "EST-01 \u00b7 State Estimation From Noisy Sensors",
+    "options": [
+      "I would follow the instructions stated on the card",
+      "I would ignore the conditions printed on the card",
+      "I would skip this card entirely"
+    ]
+  },
+  {
+    "id": "SLIDE-266",
+    "title": "EST-02 \u00b7 Sensor Fusion With Missing Data",
+    "options": [
+      "I would follow the instructions stated on the card",
+      "I would ignore the conditions printed on the card",
+      "I would skip this card entirely"
+    ]
+  },
+  {
+    "id": "SLIDE-267",
+    "title": "EST-03 \u00b7 Localization Under Model Uncertainty",
+    "options": [
+      "I would follow the instructions stated on the card",
+      "I would ignore the conditions printed on the card",
+      "I would skip this card entirely"
+    ]
+  },
+  {
+    "id": "SLIDE-268",
+    "title": "MPC-01 \u00b7 Control Within Operating Limits",
+    "options": [
+      "I would follow the instructions stated on the card",
+      "I would ignore the conditions printed on the card",
+      "I would skip this card entirely"
+    ]
+  },
+  {
+    "id": "SLIDE-269",
+    "title": "MPC-02 \u00b7 Predictive Control for Energy Systems",
+    "options": [
+      "I would follow the instructions stated on the card",
+      "I would ignore the conditions printed on the card",
+      "I would skip this card entirely"
+    ]
+  },
+  {
+    "id": "SLIDE-270",
+    "title": "MPC-03 \u00b7 Predictive Control With Safety Guarantees",
+    "options": [
+      "I would follow the instructions stated on the card",
+      "I would ignore the conditions printed on the card",
+      "I would skip this card entirely"
+    ]
+  },
+  {
+    "id": "SLIDE-271",
+    "title": "MAS-01 \u00b7 Consensus Over Sparse Networks",
+    "options": [
+      "I would follow the instructions stated on the card",
+      "I would ignore the conditions printed on the card",
+      "I would skip this card entirely"
+    ]
+  },
+  {
+    "id": "SLIDE-272",
+    "title": "MAS-02 \u00b7 Resilient Autonomous Teams",
+    "options": [
+      "I would follow the instructions stated on the card",
+      "I would ignore the conditions printed on the card",
+      "I would skip this card entirely"
+    ]
+  },
+  {
+    "id": "SLIDE-273",
+    "title": "MAS-03 \u00b7 Distributed Monitoring With Robot Teams",
+    "options": [
+      "I would follow the instructions stated on the card",
+      "I would ignore the conditions printed on the card",
+      "I would skip this card entirely"
+    ]
+  }
+]
