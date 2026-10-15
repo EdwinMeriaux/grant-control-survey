@@ -1,142 +1,132 @@
 [
   {
-    "id": "GR-001",
-    "title": "Pilot Study",
-    "description": "A proposal requests initial funding to test a promising but unproven idea.",
-    "effect": "Decide whether to fund a limited pilot.",
-    "image": "",
-    "active": true,
+    "id": "GC-DEMO-001",
+    "title": "Demo Card 1",
+    "description": "Replace with a PowerPoint containing at least five card slides.",
+    "effect": "This is a demonstration card; content is not from your game.",
     "options": [
-      "Proceed without considering the card conditions.",
-      "Evaluate the specific conditions described on the card.",
-      "Ignore the scenario and choose randomly."
+      "Option A",
+      "Option B",
+      "Option C"
     ],
-    "correct_option": 1
+    "correct_option": 1,
+    "active": true
   },
   {
-    "id": "GR-002",
-    "title": "Interdisciplinary Proposal",
-    "description": "A team proposes work spanning two research fields with differing evaluation criteria.",
-    "effect": "Consider the evidence across both fields.",
-    "image": "",
-    "active": true,
+    "id": "GC-DEMO-002",
+    "title": "Demo Card 2",
+    "description": "Replace with a PowerPoint containing at least five card slides.",
+    "effect": "This is a demonstration card; content is not from your game.",
     "options": [
-      "Proceed without considering the card conditions.",
-      "Evaluate the specific conditions described on the card.",
-      "Ignore the scenario and choose randomly."
+      "Option A",
+      "Option B",
+      "Option C"
     ],
-    "correct_option": 1
+    "correct_option": 1,
+    "active": true
   },
   {
-    "id": "GR-003",
-    "title": "Budget Revision",
-    "description": "A proposal has a compelling idea but a budget that exceeds the available funds.",
-    "effect": "Consider asking for a revised budget.",
-    "image": "",
-    "active": true,
+    "id": "GC-DEMO-003",
+    "title": "Demo Card 3",
+    "description": "Replace with a PowerPoint containing at least five card slides.",
+    "effect": "This is a demonstration card; content is not from your game.",
     "options": [
-      "Proceed without considering the card conditions.",
-      "Evaluate the specific conditions described on the card.",
-      "Ignore the scenario and choose randomly."
+      "Option A",
+      "Option B",
+      "Option C"
     ],
-    "correct_option": 1
+    "correct_option": 1,
+    "active": true
   },
   {
-    "id": "GR-004",
-    "title": "Early-Career Applicant",
-    "description": "An applicant has limited prior funding but presents a focused project.",
-    "effect": "Assess the proposal on its merits.",
-    "image": "",
-    "active": true,
+    "id": "GC-DEMO-004",
+    "title": "Demo Card 4",
+    "description": "Replace with a PowerPoint containing at least five card slides.",
+    "effect": "This is a demonstration card; content is not from your game.",
     "options": [
-      "Proceed without considering the card conditions.",
-      "Evaluate the specific conditions described on the card.",
-      "Ignore the scenario and choose randomly."
+      "Option A",
+      "Option B",
+      "Option C"
     ],
-    "correct_option": 1
+    "correct_option": 1,
+    "active": true
   },
   {
-    "id": "GR-005",
-    "title": "Replication Initiative",
-    "description": "A research group proposes replicating an influential finding.",
-    "effect": "Consider scientific value and risk.",
-    "image": "",
-    "active": true,
+    "id": "GC-DEMO-005",
+    "title": "Demo Card 5",
+    "description": "Replace with a PowerPoint containing at least five card slides.",
+    "effect": "This is a demonstration card; content is not from your game.",
     "options": [
-      "Proceed without considering the card conditions.",
-      "Evaluate the specific conditions described on the card.",
-      "Ignore the scenario and choose randomly."
+      "Option A",
+      "Option B",
+      "Option C"
     ],
-    "correct_option": 1
+    "correct_option": 1,
+    "active": true
   },
   {
-    "id": "GR-006",
-    "title": "Equipment Request",
-    "description": "The team needs shared equipment to complete its proposed study.",
-    "effect": "Consider cost versus shared benefit.",
-    "image": "",
-    "active": true,
+    "id": "GC-DEMO-006",
+    "title": "Demo Card 6",
+    "description": "Replace with a PowerPoint containing at least five card slides.",
+    "effect": "This is a demonstration card; content is not from your game.",
     "options": [
-      "Proceed without considering the card conditions.",
-      "Evaluate the specific conditions described on the card.",
-      "Ignore the scenario and choose randomly."
+      "Option A",
+      "Option B",
+      "Option C"
     ],
-    "correct_option": 1
+    "correct_option": 1,
+    "active": true
   },
   {
-    "id": "GR-007",
-    "title": "High-Risk Discovery",
-    "description": "The application could lead to a major result but has low preliminary certainty.",
-    "effect": "Evaluate potential against risk.",
-    "image": "",
-    "active": true,
+    "id": "GC-DEMO-007",
+    "title": "Demo Card 7",
+    "description": "Replace with a PowerPoint containing at least five card slides.",
+    "effect": "This is a demonstration card; content is not from your game.",
     "options": [
-      "Proceed without considering the card conditions.",
-      "Evaluate the specific conditions described on the card.",
-      "Ignore the scenario and choose randomly."
+      "Option A",
+      "Option B",
+      "Option C"
     ],
-    "correct_option": 1
+    "correct_option": 1,
+    "active": true
   },
   {
-    "id": "GR-008",
-    "title": "Community Partnership",
-    "description": "A project proposes co-designing research with a local partner.",
-    "effect": "Consider feasibility and involvement.",
-    "image": "",
-    "active": true,
+    "id": "GC-DEMO-008",
+    "title": "Demo Card 8",
+    "description": "Replace with a PowerPoint containing at least five card slides.",
+    "effect": "This is a demonstration card; content is not from your game.",
     "options": [
-      "Proceed without considering the card conditions.",
-      "Evaluate the specific conditions described on the card.",
-      "Ignore the scenario and choose randomly."
+      "Option A",
+      "Option B",
+      "Option C"
     ],
-    "correct_option": 1
+    "correct_option": 1,
+    "active": true
   },
   {
-    "id": "GR-009",
-    "title": "Urgent Funding Call",
-    "description": "A rapid-turnaround grant is available for a time-sensitive study.",
-    "effect": "Decide under a limited deadline.",
-    "image": "",
-    "active": true,
+    "id": "GC-DEMO-009",
+    "title": "Demo Card 9",
+    "description": "Replace with a PowerPoint containing at least five card slides.",
+    "effect": "This is a demonstration card; content is not from your game.",
     "options": [
-      "Proceed without considering the card conditions.",
-      "Evaluate the specific conditions described on the card.",
-      "Ignore the scenario and choose randomly."
+      "Option A",
+      "Option B",
+      "Option C"
     ],
-    "correct_option": 1
+    "correct_option": 1,
+    "active": true
   },
   {
-    "id": "GR-010",
-    "title": "Renewal Application",
-    "description": "A team seeks continued support after uneven first-year progress.",
-    "effect": "Evaluate progress and future plans.",
-    "image": "",
-    "active": true,
+    "id": "GC-DEMO-010",
+    "title": "Demo Card 10",
+    "description": "Replace with a PowerPoint containing at least five card slides.",
+    "effect": "This is a demonstration card; content is not from your game.",
     "options": [
-      "Proceed without considering the card conditions.",
-      "Evaluate the specific conditions described on the card.",
-      "Ignore the scenario and choose randomly."
+      "Option A",
+      "Option B",
+      "Option C"
     ],
-    "correct_option": 1
+    "correct_option": 1,
+    "active": true
   }
 ]
