@@ -32,3 +32,7 @@ npx wrangler deploy -c worker/wrangler.toml
 When changing cards, update `worker/allowed-cards.json` from the active card IDs, titles, and options in the generated `cards.json`, then redeploy the Worker.
 
 Existing browser-only preview responses are preserved on their originating devices; they have not been imported into the central database. The old `data/responses.csv` is an unused header-only file.
+
+## Grant review questions (version 2)
+
+The card form asks whether the prompt is properly formatted (Yes/No), whether the grant is relevant to the field (Yes/No), a 1–5 context clarity rating, optional technical issues, and optional writing issues. Overall game questions remain. New responses have `survey_version=2`, `properly_formatted`, `field_relevant`, `technical_issues`, and `writing_issues`. `clarity` holds context clarity. Removed gameplay `interest` and `comprehension` are NULL for version 2. Prior responses are preserved.
