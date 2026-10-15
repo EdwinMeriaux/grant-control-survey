@@ -1,132 +1,242 @@
 [
   {
-    "id": "GC-DEMO-001",
-    "title": "Demo Card 1",
-    "description": "Replace with a PowerPoint containing at least five card slides.",
-    "effect": "This is a demonstration card; content is not from your game.",
+    "id": "SLIDE-256",
+    "title": "PID-01 · Precision Motor Control",
+    "image": "card-images/SLIDE-256.png",
+    "active": true,
     "options": [
-      "Option A",
-      "Option B",
-      "Option C"
+      "I would follow the instructions stated on the card",
+      "I would ignore the conditions printed on the card",
+      "I would skip this card entirely"
     ],
-    "correct_option": 1,
-    "active": true
+    "correct_option": 0
   },
   {
-    "id": "GC-DEMO-002",
-    "title": "Demo Card 2",
-    "description": "Replace with a PowerPoint containing at least five card slides.",
-    "effect": "This is a demonstration card; content is not from your game.",
+    "id": "SLIDE-257",
+    "title": "PID-02 · Reliable Process Regulation",
+    "image": "card-images/SLIDE-257.png",
+    "active": true,
     "options": [
-      "Option A",
-      "Option B",
-      "Option C"
+      "I would follow the instructions stated on the card",
+      "I would ignore the conditions printed on the card",
+      "I would skip this card entirely"
     ],
-    "correct_option": 1,
-    "active": true
+    "correct_option": 0
   },
   {
-    "id": "GC-DEMO-003",
-    "title": "Demo Card 3",
-    "description": "Replace with a PowerPoint containing at least five card slides.",
-    "effect": "This is a demonstration card; content is not from your game.",
+    "id": "SLIDE-258",
+    "title": "PID-03 · Feedback Under Communication Delays",
+    "image": "card-images/SLIDE-258.png",
+    "active": true,
     "options": [
-      "Option A",
-      "Option B",
-      "Option C"
+      "I would follow the instructions stated on the card",
+      "I would ignore the conditions printed on the card",
+      "I would skip this card entirely"
     ],
-    "correct_option": 1,
-    "active": true
+    "correct_option": 0
   },
   {
-    "id": "GC-DEMO-004",
-    "title": "Demo Card 4",
-    "description": "Replace with a PowerPoint containing at least five card slides.",
-    "effect": "This is a demonstration card; content is not from your game.",
+    "id": "SLIDE-259",
+    "title": "STA-01 · Stability of Nonlinear Systems",
+    "image": "card-images/SLIDE-259.png",
+    "active": true,
     "options": [
-      "Option A",
-      "Option B",
-      "Option C"
+      "I would follow the instructions stated on the card",
+      "I would ignore the conditions printed on the card",
+      "I would skip this card entirely"
     ],
-    "correct_option": 1,
-    "active": true
+    "correct_option": 0
   },
   {
-    "id": "GC-DEMO-005",
-    "title": "Demo Card 5",
-    "description": "Replace with a PowerPoint containing at least five card slides.",
-    "effect": "This is a demonstration card; content is not from your game.",
+    "id": "SLIDE-260",
+    "title": "STA-02 · Safe Switching Between Controllers",
+    "image": "card-images/SLIDE-260.png",
+    "active": true,
     "options": [
-      "Option A",
-      "Option B",
-      "Option C"
+      "I would follow the instructions stated on the card",
+      "I would ignore the conditions printed on the card",
+      "I would skip this card entirely"
     ],
-    "correct_option": 1,
-    "active": true
+    "correct_option": 0
   },
   {
-    "id": "GC-DEMO-006",
-    "title": "Demo Card 6",
-    "description": "Replace with a PowerPoint containing at least five card slides.",
-    "effect": "This is a demonstration card; content is not from your game.",
+    "id": "SLIDE-261",
+    "title": "STA-03 · Robustness to Persistent Disturbances",
+    "image": "card-images/SLIDE-261.png",
+    "active": true,
     "options": [
-      "Option A",
-      "Option B",
-      "Option C"
+      "I would follow the instructions stated on the card",
+      "I would ignore the conditions printed on the card",
+      "I would skip this card entirely"
     ],
-    "correct_option": 1,
-    "active": true
+    "correct_option": 0
   },
   {
-    "id": "GC-DEMO-007",
-    "title": "Demo Card 7",
-    "description": "Replace with a PowerPoint containing at least five card slides.",
-    "effect": "This is a demonstration card; content is not from your game.",
+    "id": "SLIDE-262",
+    "title": "LIN-01 · Control With Limited Actuation",
+    "image": "card-images/SLIDE-262.png",
+    "active": true,
     "options": [
-      "Option A",
-      "Option B",
-      "Option C"
+      "I would follow the instructions stated on the card",
+      "I would ignore the conditions printed on the card",
+      "I would skip this card entirely"
     ],
-    "correct_option": 1,
-    "active": true
+    "correct_option": 0
   },
   {
-    "id": "GC-DEMO-008",
-    "title": "Demo Card 8",
-    "description": "Replace with a PowerPoint containing at least five card slides.",
-    "effect": "This is a demonstration card; content is not from your game.",
+    "id": "SLIDE-263",
+    "title": "LIN-02 · Observers With Limited Sensing",
+    "image": "card-images/SLIDE-263.png",
+    "active": true,
     "options": [
-      "Option A",
-      "Option B",
-      "Option C"
+      "I would follow the instructions stated on the card",
+      "I would ignore the conditions printed on the card",
+      "I would skip this card entirely"
     ],
-    "correct_option": 1,
-    "active": true
+    "correct_option": 0
   },
   {
-    "id": "GC-DEMO-009",
-    "title": "Demo Card 9",
-    "description": "Replace with a PowerPoint containing at least five card slides.",
-    "effect": "This is a demonstration card; content is not from your game.",
+    "id": "SLIDE-264",
+    "title": "LIN-03 · Reliable Multivariable Control",
+    "image": "card-images/SLIDE-264.png",
+    "active": true,
     "options": [
-      "Option A",
-      "Option B",
-      "Option C"
+      "I would follow the instructions stated on the card",
+      "I would ignore the conditions printed on the card",
+      "I would skip this card entirely"
     ],
-    "correct_option": 1,
-    "active": true
+    "correct_option": 0
   },
   {
-    "id": "GC-DEMO-010",
-    "title": "Demo Card 10",
-    "description": "Replace with a PowerPoint containing at least five card slides.",
-    "effect": "This is a demonstration card; content is not from your game.",
+    "id": "SLIDE-265",
+    "title": "EST-01 · State Estimation From Noisy Sensors",
+    "image": "card-images/SLIDE-265.png",
+    "active": true,
     "options": [
-      "Option A",
-      "Option B",
-      "Option C"
+      "I would follow the instructions stated on the card",
+      "I would ignore the conditions printed on the card",
+      "I would skip this card entirely"
     ],
-    "correct_option": 1,
-    "active": true
+    "correct_option": 0
+  },
+  {
+    "id": "SLIDE-266",
+    "title": "EST-02 · Sensor Fusion With Missing Data",
+    "image": "card-images/SLIDE-266.png",
+    "active": true,
+    "options": [
+      "I would follow the instructions stated on the card",
+      "I would ignore the conditions printed on the card",
+      "I would skip this card entirely"
+    ],
+    "correct_option": 0
+  },
+  {
+    "id": "SLIDE-267",
+    "title": "EST-03 · Localization Under Model Uncertainty",
+    "image": "card-images/SLIDE-267.png",
+    "active": true,
+    "options": [
+      "I would follow the instructions stated on the card",
+      "I would ignore the conditions printed on the card",
+      "I would skip this card entirely"
+    ],
+    "correct_option": 0
+  },
+  {
+    "id": "SLIDE-268",
+    "title": "MPC-01 · Control Within Operating Limits",
+    "image": "card-images/SLIDE-268.png",
+    "active": true,
+    "options": [
+      "I would follow the instructions stated on the card",
+      "I would ignore the conditions printed on the card",
+      "I would skip this card entirely"
+    ],
+    "correct_option": 0
+  },
+  {
+    "id": "SLIDE-269",
+    "title": "MPC-02 · Predictive Control for Energy Systems",
+    "image": "card-images/SLIDE-269.png",
+    "active": true,
+    "options": [
+      "I would follow the instructions stated on the card",
+      "I would ignore the conditions printed on the card",
+      "I would skip this card entirely"
+    ],
+    "correct_option": 0
+  },
+  {
+    "id": "SLIDE-270",
+    "title": "MPC-03 · Predictive Control With Safety Guarantees",
+    "image": "card-images/SLIDE-270.png",
+    "active": true,
+    "options": [
+      "I would follow the instructions stated on the card",
+      "I would ignore the conditions printed on the card",
+      "I would skip this card entirely"
+    ],
+    "correct_option": 0
+  },
+  {
+    "id": "SLIDE-271",
+    "title": "MAS-01 · Consensus Over Sparse Networks",
+    "image": "card-images/SLIDE-271.png",
+    "active": true,
+    "options": [
+      "I would follow the instructions stated on the card",
+      "I would ignore the conditions printed on the card",
+      "I would skip this card entirely"
+    ],
+    "correct_option": 0
+  },
+  {
+    "id": "SLIDE-272",
+    "title": "MAS-02 · Resilient Autonomous Teams",
+    "image": "card-images/SLIDE-272.png",
+    "active": true,
+    "options": [
+      "I would follow the instructions stated on the card",
+      "I would ignore the conditions printed on the card",
+      "I would skip this card entirely"
+    ],
+    "correct_option": 0
+  },
+  {
+    "id": "SLIDE-273",
+    "title": "MAS-03 · Distributed Monitoring With Robot Teams",
+    "image": "card-images/SLIDE-273.png",
+    "active": true,
+    "options": [
+      "I would follow the instructions stated on the card",
+      "I would ignore the conditions printed on the card",
+      "I would skip this card entirely"
+    ],
+    "correct_option": 0
+  },
+  {
+    "id": "SLIDE-274",
+    "title": "NEW-01 · [Funding Call",
+    "image": "card-images/SLIDE-274.png",
+    "active": false,
+    "options": [
+      "I would follow the instructions stated on the card",
+      "I would ignore the conditions printed on the card",
+      "I would skip this card entirely"
+    ],
+    "correct_option": 0
+  },
+  {
+    "id": "SLIDE-275",
+    "title": "REF-01 · one review pool",
+    "image": "card-images/SLIDE-275.png",
+    "active": false,
+    "options": [
+      "I would follow the instructions stated on the card",
+      "I would ignore the conditions printed on the card",
+      "I would skip this card entirely"
+    ],
+    "correct_option": 0
   }
 ]
