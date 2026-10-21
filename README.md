@@ -67,6 +67,6 @@ Pushing to GitHub publishes the frontend through GitHub Actions; it does not dep
 
 ## Game introduction
 
-After **Start**, participants see a short explanation of the full game before continuing to their assigned cards. The overview diagram is visible immediately; a collapsible section shows the round-flow diagram. Both diagrams open at full size when selected. **Game overview** on the card screen reopens this explanation and preserves the current card and answers.
+After **Start**, participants see a short explanation of the full game before continuing to their assigned cards. The purpose of today’s five-card survey appears first. A responsive five-step diagram explains the research-to-funding loop, followed by the lab-support tradeoff and scoring. The original overview and round-flow figures are available in a collapsible section. Both diagrams open at full size when selected. **Game overview** on the card screen reopens this explanation and preserves the current card and answers.
 
 Text and figures come from the supplied Overleaf project: funded_or_famished.zip: main.tex, figures/fig1_components.pdf, and figures/fig2_turn_flow.pdf. The PNGs in `game-context/` are web renderings of those original PDF figures. The introduction describes the full game's mechanics separately from the five-card survey. The final background questions and Cloudflare submission format are unchanged.
