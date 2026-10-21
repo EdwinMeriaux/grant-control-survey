@@ -9,5 +9,6 @@ CREATE TABLE IF NOT EXISTS responses (
  survey_version INTEGER NOT NULL DEFAULT 1,
  verdict TEXT, technical_issues TEXT, writing_issues TEXT,
  properly_formatted TEXT, field_relevant TEXT,
+ background TEXT, highest_degree TEXT,
  PRIMARY KEY (game, respondent_id, card_id)
 );

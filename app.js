@@ -1,7 +1,7 @@
 /* Shared survey engine; no build step. */
 const $ = id => document.getElementById(id);
 const cfg = window.SURVEY_CONFIG;
-const state = { cards: [], index: 0, answers: {}, respondentId: crypto.randomUUID(), startedAt: null, busy: false };
+const state = { cards: [], index: 0, answers: {}, respondentId: crypto.randomUUID(), startedAt: null, background: null, highest_degree: null, busy: false };
 // Preserve saved responses and unfinished surveys on this device.
 const savedKey = `survey-progress:grant-five-v2:${cfg.game}`;
 const escapeHtml = s => String(s ?? '').replace(/[&<>"']/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -18,7 +18,19 @@ async function selectCards(){
  const r = await fetch('cards.json',{cache:'no-store'});if(!r.ok)throw new Error('Cards could not be loaded');
  const source=await r.json();return shuffle(source.filter(x=>x.active!==false)).slice(0,5);
 }
-function persist(){sessionStorage.setItem(savedKey,JSON.stringify({cards:state.cards,index:state.index,answers:state.answers,respondentId:state.respondentId,startedAt:state.startedAt}))}
+function persist(){sessionStorage.setItem(savedKey,JSON.stringify({cards:state.cards,index:state.index,answers:state.answers,respondentId:state.respondentId,startedAt:state.startedAt,background:state.background,highest_degree:state.highest_degree}))}
+const backgrounds = ['academia_controls','academia_other','non_academia'];
+const degrees = ['phd','masters','undergrad','other'];
+function collectProfile(){
+ state.background=document.querySelector('input[name="background"]:checked')?.value||null;
+ state.highest_degree=document.querySelector('input[name="highest_degree"]:checked')?.value||null;
+ persist();
+}
+function restoreProfile(){
+ for(const name of ['background','highest_degree']){
+  document.querySelectorAll(`input[name="${name}"]`).forEach(el=>{el.checked=el.value===state[name]});
+ }
+}
 function renderCard(card){
  const pic=card.image_url || card.image;
  if(pic){$('card-display').innerHTML=`<img src="${escapeHtml(pic)}" alt="${escapeHtml(card.title)}">`;return}
@@ -53,16 +65,18 @@ async function start(){
   let old;try{old=JSON.parse(sessionStorage.getItem(savedKey))}catch{}
   if(old && old.cards?.length===5){Object.assign(state,old)}
   else{state.startedAt=new Date().toISOString();state.cards=await selectCards();if(state.cards.length<5)throw new Error('At least five active cards are required.');state.index=0;persist()}
-  render();show('survey');
+  restoreProfile();render();show('survey');
  }catch(e){$('landing-error').textContent=e.message}
  finally{$('start').disabled=false;$('start').textContent='Start the 5-card survey →'}
 }
 async function submit(){
  if(state.busy)return;
  state.busy=true;$('submit').disabled=true;$('submit').textContent='Submitting…';$('overall-error').textContent='';
- const result={survey_version:2,game:cfg.game,respondent_id:state.respondentId,started_at:state.startedAt,completed_at:new Date().toISOString(),overall_interest:Number(document.querySelector('input[name="overall_interest"]:checked')?.value),overall_feedback:$('overall-feedback').value.trim(),cards:state.cards.map(c=>({card_id:c.id,title:c.title,...state.answers[c.id]}))};
+ collectProfile();
+ const result={survey_version:3,background:state.background,highest_degree:state.highest_degree,game:cfg.game,respondent_id:state.respondentId,started_at:state.startedAt,completed_at:new Date().toISOString(),overall_interest:Number(document.querySelector('input[name="overall_interest"]:checked')?.value),overall_feedback:$('overall-feedback').value.trim(),cards:state.cards.map(c=>({card_id:c.id,title:c.title,...state.answers[c.id]}))};
  try{
   if(!Number.isInteger(result.overall_interest))throw new Error('Please select an overall game interest rating.');
+  if(!backgrounds.includes(result.background)||!degrees.includes(result.highest_degree))throw new Error('Please select your background and highest degree before submitting.');
   if(!configured)throw new Error('Response collection is not connected yet. Your answers have not been submitted. Please contact the survey organizer.');
   await req(result);
   sessionStorage.removeItem(savedKey);show('complete');
@@ -75,3 +89,5 @@ $('prev').onclick=()=>{collect();state.index=Math.max(0,state.index-1);persist()
 $('back-overall').onclick=()=>{render();show('survey')};$('submit').onclick=submit;
 $('start-new').onclick=()=>location.reload();
 $('mode').textContent=configured?'Your answers will be sent securely to the survey organizer.':'Response collection is not connected yet. Submissions are currently unavailable.';
+
+document.querySelectorAll('input[name="background"], input[name="highest_degree"]').forEach(el=>{el.onchange=collectProfile});
