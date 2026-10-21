@@ -58,14 +58,14 @@ function collect(){
  state.answers[card.id]=a;persist();return a;
 }
 function validate(a){return Number.isInteger(a.clarity)&&a.clarity>=1&&a.clarity<=5&&['Yes','No'].includes(a.properly_formatted)&&['Yes','No'].includes(a.field_relevant)}
-function show(name){['landing','survey','overall','complete'].forEach(id=>$(id).classList.toggle('hidden',id!==name));window.scrollTo({top:0,behavior:'smooth'})}
+function show(name){['landing','intro','survey','overall','complete'].forEach(id=>$(id).classList.toggle('hidden',id!==name));window.scrollTo({top:0,behavior:'smooth'})}
 async function start(){
  $('start').disabled=true;$('start').textContent='Loading cards…';
  try{
   let old;try{old=JSON.parse(sessionStorage.getItem(savedKey))}catch{}
   if(old && old.cards?.length===5){Object.assign(state,old)}
   else{state.startedAt=new Date().toISOString();state.cards=await selectCards();if(state.cards.length<5)throw new Error('At least five active cards are required.');state.index=0;persist()}
-  restoreProfile();render();show('survey');
+  restoreProfile();show('intro');$('intro-title').focus({preventScroll:true});
  }catch(e){$('landing-error').textContent=e.message}
  finally{$('start').disabled=false;$('start').textContent='Start the 5-card survey →'}
 }
@@ -84,6 +84,8 @@ async function submit(){
  finally{state.busy=false;$('submit').disabled=false;$('submit').textContent='Submit feedback ✓'}
 }
 $('start').onclick=start;
+$('begin-cards').onclick=()=>{render();show('survey')};
+$('review-context').onclick=()=>{collect();show('intro');$('intro-title').focus({preventScroll:true})};
 $('next').onclick=()=>{const a=collect();if(!validate(a)){$('survey-error').textContent='Please answer both Yes/No questions and rate the context clarity before continuing.';return}if(state.index===state.cards.length-1){show('overall')}else{state.index++;persist();render();window.scrollTo({top:0,behavior:'smooth'})}};
 $('prev').onclick=()=>{collect();state.index=Math.max(0,state.index-1);persist();render()};
 $('back-overall').onclick=()=>{render();show('survey')};$('submit').onclick=submit;

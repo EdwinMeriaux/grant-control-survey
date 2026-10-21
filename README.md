@@ -64,3 +64,9 @@ npx wrangler deploy --config worker/wrangler.toml
 ```
 
 Pushing to GitHub publishes the frontend through GitHub Actions; it does not deploy the Workers or change the database. Deploy the database and both Workers first. Version 3 submissions are rejected by older Workers, so new background answers cannot be silently dropped.
+
+## Game introduction
+
+After **Start**, participants see a short explanation of the full game before continuing to their assigned cards. The overview diagram is visible immediately; a collapsible section shows the round-flow diagram. Both diagrams open at full size when selected. **Game overview** on the card screen reopens this explanation and preserves the current card and answers.
+
+Text and figures come from the supplied Overleaf project: funded_or_famished.zip: main.tex, figures/fig1_components.pdf, and figures/fig2_turn_flow.pdf. The PNGs in `game-context/` are web renderings of those original PDF figures. The introduction describes the full game's mechanics separately from the five-card survey. The final background questions and Cloudflare submission format are unchanged.
